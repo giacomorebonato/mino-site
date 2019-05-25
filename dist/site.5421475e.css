@@ -1,0 +1,63 @@
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+header > * {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 80% 5%;
+}
+
+#main-image {
+  animation: spin-right 22s linear infinite;
+  border: 4px solid black;
+  border-radius: 50%;
+  max-width: 480px;
+  width: 80%;
+}
+#main-image:hover {
+  animation: spin-left 22s linear infinite;
+}
+
+@keyframes spin-left {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+div.nav {
+  padding: 8px;
+  margin: 0 4px;
+  border: 1px dotted black;
+}
+div.nav > a {
+  padding: 8px;
+}
+
+section.text-section {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 1em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=/site.5421475e.css.map */

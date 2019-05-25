@@ -1,0 +1,34 @@
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+header > * {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+
+#main-image {
+  animation:spin-right 22s linear infinite;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+#main-image:hover {
+  animation:spin-left 22s linear infinite;
+}
+
+@keyframes spin-left { 100% { transform:rotate(-360deg); } }
+@keyframes spin-right { 100% { transform:rotate(360deg); } }
+
+.main-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=/site.9f0b0bb2.css.map */
