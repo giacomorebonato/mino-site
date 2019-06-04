@@ -18,7 +18,7 @@ header > * {
   max-width: 480px;
   width: 80%;
 
-  &:hover {
+  &.shake {
     animation: shake 0.5s linear infinite;
   }
 }

@@ -1,11 +1,24 @@
-let imgURL = 'https://placeimg.com/480/480/people'
 let mainImage = document.getElementById('main-image')
 let counter = 0
+let images = [
+  require('../images/mino_0.jpg'),
+  require('../images/mino_1.jpg'),
+  require('../images/mino_2.jpg')
+]
 
-mainImage.src = imgURL
+if (mainImage) {
+  setInterval(() => {
+    mainImage.classList.add('shake')
 
-setInterval(() => {
-  mainImage.src = `${imgURL}?i=${counter}`
+    setTimeout(() => {
+      if (counter > 2) {
+        counter = 0
+      }
 
-  counter++
-}, 5000)
+      mainImage.src = images[counter]
+      mainImage.classList.remove('shake')
+    }, 1000)
+
+    counter++
+  }, 2500)
+}
