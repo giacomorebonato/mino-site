@@ -17,8 +17,7 @@ if (mainImage) {
 
       mainImage.src = images[counter]
       mainImage.classList.remove('shake')
+      counter++
     }, 1000)
-
-    counter++
   }, 2500)
 }
